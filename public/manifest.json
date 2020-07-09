@@ -1,11 +1,11 @@
 {
-  "short_name": "Weather App",
-  "name": "Weather App PWA",
+  "short_name": "Fants Game",
+  "name": "Fants Game",
   "icons": [
     {
       "src": "/images/logo.png",
       "type": "image/png",
-      "sizes": "1024x1024"
+      "sizes": "980x982"
     }
   ],
   "start_url": ".",
