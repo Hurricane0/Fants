@@ -84,7 +84,7 @@ const Fants = () => {
 
   return (
     <div className={styles.wrapper}>
-      <div className={styles.container}>
+      <div>
         <Time chosenTime={chosenTime} />
         <div className={styles['main-container']}>
           <Place chosenPlace={chosenPlace} />
@@ -96,14 +96,7 @@ const Fants = () => {
 
       <hr />
 
-      <div
-        // style={{
-        //   borderTop: '1px solid #0000002e',
-        //   paddingTop: '50px',
-        //   marginBottom: '0px',
-        // }}
-        className={styles.container}
-      >
+      <div>
         <Time chosenTime={chosenTimeSecond} />
         <div className={styles['main-container']}>
           <Place chosenPlace={chosenPlaceSecond} />
