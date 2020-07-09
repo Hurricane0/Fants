@@ -1,0 +1,13 @@
+.mode-button-container {
+  display: flex;
+  justify-content: center;
+
+  .button {
+    color: #9e9e9e;
+    user-select: none;
+    overflow: hidden;
+    outline: none;
+    text-decoration: none;
+    margin-top: 20px;
+  }
+}
