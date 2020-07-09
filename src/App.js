@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Route } from 'react-router-dom';
+import { Route, BrowserRouter } from 'react-router-dom';
 import { Quests } from './pages/Quests/Quests';
 import Fants from './pages/Fants/Fants';
 import Layout from './components/Layout/Layout';
@@ -7,16 +7,16 @@ import Layout from './components/Layout/Layout';
 function App() {
   return (
     <>
-      <HashRouter>
+      <BrowserRouter>
         <Layout>
-          <Route exact path="/">
-            <Fants />
-          </Route>
-          <Route path="/quests">
-            <Quests />
-          </Route>
+          <Route exact path="/" component={Fants} />
+          {/* <Fants /> */}
+          {/* </Route> */}
+          <Route path="/quests" component={Quests} />
+          {/* <Quests />
+          </Route> */}
         </Layout>
-      </HashRouter>
+      </BrowserRouter>
     </>
   );
 }
