@@ -3,8 +3,8 @@
   "name": "Fants Game",
   "icons": [
     {
-      "src": "/images/logo.png",
-      "type": "image/png",
+      "src": "/images/logo.jpg",
+      "type": "image/jpg",
       "sizes": "980x982"
     }
   ],
