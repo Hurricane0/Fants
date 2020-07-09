@@ -7,16 +7,16 @@ import Layout from './components/Layout/Layout';
 function App() {
   return (
     <>
-      <Layout>
-        <HashRouter>
+      <HashRouter>
+        <Layout>
           <Route exact path="/">
             <Fants />
           </Route>
           <Route path="/quests">
             <Quests />
           </Route>
-        </HashRouter>
-      </Layout>
+        </Layout>
+      </HashRouter>
     </>
   );
 }

@@ -3,7 +3,6 @@ import { Time } from '../../components/Time/Time';
 import { Place } from '../../components/Place/Place';
 import { Action } from '../../components/Action/Action';
 import { Button } from '../../components/Button/Button';
-import { ModeButton } from '../../components/ModeButton/ModeButton';
 import styles from './Fants.module.scss';
 
 const Fants = () => {
@@ -103,7 +102,7 @@ const Fants = () => {
           <Action chosenAction={chosenActionSecond} />
         </div>
         <Button play={playSecond} />
-        <ModeButton />
+        {/* <ModeButton /> */}
       </div>
     </div>
   );

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
 import styles from './Quests.module.scss';
 
 export const Quests = () => {
@@ -43,9 +42,9 @@ export const Quests = () => {
       <div>
         <span className={styles['quest-text']}>{chosenQuest}</span>
       </div>
-      <NavLink className={styles['back-to-fant-button']} to={'/'}>
+      {/* <NavLink className={styles['back-to-fant-button']} to={'/'}>
         &sim;Режим Фантов&sim;
-      </NavLink>
+      </NavLink> */}
     </div>
   );
 };
