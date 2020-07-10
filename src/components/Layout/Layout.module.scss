@@ -1,4 +1,5 @@
 @import '../../variables.scss';
+@import '../../mixins.scss';
 .wrapper {
   min-height: $min-height;
   padding: 10px 5px 10px 5px;
@@ -9,6 +10,13 @@
     position: absolute;
     bottom: 50px;
     left: 155px;
+    height: 30px;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include card();
+
     a {
       user-select: none;
       overflow: hidden;

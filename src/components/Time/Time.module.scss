@@ -1,4 +1,6 @@
 @import '../../variables.scss';
+@import '../../mixins.scss';
+
 .time-container {
   width: 100%;
   display: flex;
@@ -7,16 +9,10 @@
 }
 
 .time-block {
+  @include card();
   width: 220px;
   height: 40px;
-  border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 28px;
   font-weight: bold;
   padding-bottom: 6px;
-  color: $font-color;
-  background-color: $light-grey;
-  box-shadow: 0 0 10px #111111;
 }
