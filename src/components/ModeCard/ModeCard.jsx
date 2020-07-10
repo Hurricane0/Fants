@@ -9,7 +9,7 @@ const ModeCard = ({ title, src, link }) => {
         <div className={styles.card}>
           <img src={src} alt="love" />
         </div>
-        <span>{title}</span>
+        <span className={styles.title}>{title}</span>
       </div>
     </Link>
   );

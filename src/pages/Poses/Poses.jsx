@@ -1,13 +1,10 @@
 import React from 'react';
+import styles from './Poses.module.scss';
 
 const Poses = () => {
   return (
     <div>
-      <h1 style={{ textAlign: 'center' }}>Coming soon...</h1>
-      <img
-        src="https://dbdzm869oupei.cloudfront.net/img/sticker/preview/4953.png"
-        alt="pose"
-      />
+      <h1 className={styles.header}>Выбери лучшую позу</h1>
     </div>
   );
 };

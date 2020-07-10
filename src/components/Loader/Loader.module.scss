@@ -1,0 +1,27 @@
+img {
+  height: 100vh;
+}
+
+.wrapper {
+  position: absolute;
+  transition: 0.5s;
+}
+
+.seen {
+  opacity: 1;
+  z-index: 100;
+}
+
+.hidden {
+  opacity: 0;
+  z-index: 0;
+  // animation: remove 0.1s;
+}
+// @keyframes remove {
+//   0% {
+//     display: block;
+//   }
+//   100% {
+//     display: none;
+//   }
+// }

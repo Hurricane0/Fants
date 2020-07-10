@@ -8,6 +8,10 @@
   animation: pulse 0.8s infinite;
 }
 
+.title {
+  font-weight: 200;
+}
+
 .card {
   @include card();
   height: 80px;
