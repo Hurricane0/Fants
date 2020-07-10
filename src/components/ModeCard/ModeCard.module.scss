@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: pulse 0.8s infinite;
 }
 
 .card {
@@ -20,4 +21,27 @@
 }
 span {
   margin: 0 auto;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

@@ -4,10 +4,35 @@
   justify-content: center;
 
   span {
+    animation: pulse 0.8s infinite;
+
     font-size: 32px;
     margin: 0 auto;
     user-select: none;
     overflow: hidden;
     outline: none;
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }
