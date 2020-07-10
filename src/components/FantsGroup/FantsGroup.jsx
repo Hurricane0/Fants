@@ -11,7 +11,7 @@ import {
 } from '../../state/fants';
 import styles from './FantsGroup.module.scss';
 
-const FantsGroup = ({ isBoy }) => {
+const FantsGroup = ({ isBoy, moveTop = false }) => {
   const [chosenTime, setChosenTime] = useState(0);
   const [chosenPlace, setChosenPlace] = useState('Hot');
   const [chosenAction, setChosenAction] = useState('Hot');
@@ -39,7 +39,7 @@ const FantsGroup = ({ isBoy }) => {
   };
 
   return (
-    <div>
+    <div className={moveTop ? styles.translateTop : null}>
       <Time chosenTime={chosenTime} />
       <div className={styles['main-container']}>
         <Action

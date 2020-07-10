@@ -5,9 +5,9 @@ import FantsGroup from '../../components/FantsGroup/FantsGroup';
 const Fants = () => {
   return (
     <div className={styles.wrapper}>
-      <FantsGroup isBoy={true} />
+      <FantsGroup isBoy />
       <hr />
-      <FantsGroup isBoy={false} />
+      <FantsGroup moveTop isBoy={false} />
     </div>
   );
 };
