@@ -30,7 +30,8 @@ const FantsGroup = ({ isBoy, moveTop = false }) => {
   const actions = isBoy ? boyActions : girlActions;
 
   const play = () => {
-    vibrate();
+    const success = vibrate();
+    alert(success);
     setIsLoading(true);
     setChosenTime(randomize(times));
     setChosenPlace(randomize(places));

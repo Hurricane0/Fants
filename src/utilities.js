@@ -1,5 +1,5 @@
-export const vibrate = (duration = 200) => {
-  window.navigator.vibrate(duration);
+export const vibrate = (duration = 400) => {
+  return window.navigator.vibrate(duration);
 };
 
 export const randomize = list => {
