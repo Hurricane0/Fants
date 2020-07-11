@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import styles from './Poses.module.scss';
 import { poses, defaultPose } from '../../state/poses';
-import { randomize } from '../../utilities';
+import { randomize, vibrate } from '../../utilities';
 
 const Poses = () => {
   const [chosenPose, setChosenPose] = useState(defaultPose);
 
   const randomizePose = () => {
+    vibrate();
     setChosenPose(randomize(poses));
   };
 
