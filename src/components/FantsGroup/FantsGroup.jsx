@@ -10,6 +10,7 @@ import {
   girlPlaces,
 } from '../../state/fants';
 import styles from './FantsGroup.module.scss';
+import { vibrate, randomize } from '../../utilities';
 
 const FantsGroup = ({ isBoy, moveTop = false }) => {
   const [chosenTime, setChosenTime] = useState(0);
@@ -29,10 +30,11 @@ const FantsGroup = ({ isBoy, moveTop = false }) => {
   const actions = isBoy ? boyActions : girlActions;
 
   const play = () => {
+    vibrate();
     setIsLoading(true);
-    setChosenTime(times[Math.floor(Math.random() * times.length)]);
-    setChosenPlace(places[Math.floor(Math.random() * places.length)]);
-    setChosenAction(actions[Math.floor(Math.random() * actions.length)]);
+    setChosenTime(randomize(times));
+    setChosenPlace(randomize(places));
+    setChosenAction(randomize(actions));
     setTimeout(() => {
       setIsLoading(false);
     }, 2000);

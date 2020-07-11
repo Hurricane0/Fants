@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import styles from './Poses.module.scss';
 import { poses, defaultPose } from '../../state/poses';
+import { randomize } from '../../utilities';
 
 const Poses = () => {
   const [chosenPose, setChosenPose] = useState(defaultPose);
 
   const randomizePose = () => {
-    let num = Math.ceil(Math.random() * poses.length);
-    setChosenPose(poses.find(({ id }) => id === num));
+    setChosenPose(randomize(poses));
   };
 
   return (
