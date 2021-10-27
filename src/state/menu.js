@@ -1,7 +1,7 @@
 export const modes = [
   {
     id: 1,
-    title: 'Фанты',
+    title: 'ТЕСТ',
     src:
       'https://res.cloudinary.com/dygwe02oe/image/upload/v1594319964/dice_fjjm3r.png',
     link: '/fants',
