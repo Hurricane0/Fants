@@ -1,2 +1,5 @@
+[context.master]
+  command = "npm run test-vers && npm run build"
+
 [context.staging-brf]
-  command = "npm run test && npm run build-brf"
+  command = "npm run test-vers && npm run build-brf"
