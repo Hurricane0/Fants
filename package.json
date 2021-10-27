@@ -7,6 +7,7 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.19.2",
+    "cross-env": "^7.0.3",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -14,8 +15,10 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "cross-env REACT_APP_ENV=default react-scripts start",
+    "start-brf": "cross-env REACT_APP_ENV=brf react-scripts start",
+    "build": "cross-env REACT_APP_ENV=default react-scripts build",
+    "build-brf": "cross-env REACT_APP_ENV=brf react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
