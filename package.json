@@ -20,7 +20,8 @@
     "build": "cross-env REACT_APP_ENV=default react-scripts build",
     "build-brf": "cross-env REACT_APP_ENV=brf react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test-vers": "npm --v"
   },
   "eslintConfig": {
     "extends": "react-app"
